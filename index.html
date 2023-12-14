@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Austin's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+</head>
+<body>
+  <section id="header">
+    <div class="container">
+      <nav>
+        <div>
+          <h1><span>A</span>O</h1>
+        </div>
+
+        <ul id="sideMenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="bi bi-x" onclick="closeMenu()"></i>
+        </ul>
+        <i class="bi bi-list" onclick="openMenu()"></i>
+      </nav>
+
+      <div class="header-text">
+        <h1>Hi, I'm <span>Austin</span> Okebata</h1>
+        <p>a web developer</p> 
+      </div>
+    </div>
+  </section>
+
+  <!-- =========== ABOUT ME ========= -->
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col1">
+          <img src="image/austin.jpg">
+        </div>
+
+        <div class="about-col2">
+          <h1 class="sub-title">About Me</h1>
+
+          <p>
+            I'm a frontend web developer based in Lagos, Nigeria. I have a passion for web design and love to create for web and mobile devices. 
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('eduction')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+
+              <li><span>Web Development</span><br>
+                <table>
+                  <tr>
+                    <th>front-end</th>
+                    <th class="td">back-end</th>
+                  </tr>
+                  <tr>
+                    <td>HTML5</td>
+                    <td class="td">PHP</td>
+                  </tr>
+                  <tr>
+                    <td>CSS3</td>
+                    <td class="td">Python</td>
+                  </tr>
+                  <tr>
+                    <td>jQuery</td>
+                  </tr>
+                  <tr>
+                    <td>JavaScript</td>
+                  </tr>
+                  <tr>
+                    
+                  </tr>
+                </table>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>September 2023</span><br>Web Development instructor at Nigerian Global Blockchain Consortium (NGBC).
+              </li>
+
+              <li><span>September 2023</span><br>Web Development instructor at D'Tech Africa.
+              </li>
+
+              <li><span>July 2023</span><br>Web Developer at Decipher Innovate.
+              </li>
+
+              <li><span>May 2023</span><br>Web Development Intern at Decipher Innovate.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="eduction">
+            <ul>
+              <li><span>2023</span><br>Web Development Certification at Decipher Innovate.
+              </li>
+
+              <li><span>2016</span><br>B.sc (Ed) Educational Management and Economics <br>
+                University of Benin, Benin City.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========== MY WORK ============= -->
+
+  <section id="work">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+
+      <div class="work-list">
+        <div>
+          <i class="bi bi-code-slash"></i>
+          <h2 style="font-size: 20px;">Websites Design</h2>
+          <p>
+            I like to keep it simple. My goals are to focus on typography, content and conveying the message that you want to send.
+          </p>
+        </div>
+
+        <div>
+          <i class="bi bi-globe2"></i>
+          <h2 style="font-size: 18px;">Web App Development</h2>
+          <p>
+            I'm a developer, so I know how to create your website to run across devices using the latest technologies available.
+          </p>
+        </div>
+
+        <div>
+          <i class="bi bi-pencil-square"></i>
+          <h2 style="font-size: 18px;">Web Development Instructor</h2>
+          <p>
+            Stay ahead in the fast-evolving tech landscape with the latest web development trends and technologies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO ============= -->
+
+  <section id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="portfolio-list">
+        <div class="list">
+          <img src="image/care_website.webp">
+          <div class="layer">
+            <h3>Responsive Care website</h3>
+            <a href="https://aus1989.github.io/care-website/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+          
+        <div class="list">
+          <img src="image/instructor.jpg">
+          <div class="layer">
+            <h3>Introduction to HTML Tutorial</h3>
+            <a href="https://www.youtube.com/watch?v=WAa6FFfxdKE&t=127s&pp=ygUMZHRlY2ggYWZyaWNh" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+        <div class="list">
+          <img src="image/voice_app2.jpg">
+          <div class="layer">
+            <h3>Responsive Language-Translator-App</h3>
+            <a href="https://aus1989.github.io/Language-Translator-App/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============== -->
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Get In Touch</h1>
+          <p><i class="bi bi-envelope"></i> okebataaustino1989@gmail.com</p>
+          <p><i class="bi bi-telephone"></i> +234 8132208451</p>
+
+          <div class="social-icons">
+            <a href="https://wa.me/08132208451" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/austin-okebata" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+          <a href="image/Austin's Resume.pdf" download class="btn">Download CV</a>
+        </div>
+
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+
+            <button class="btn" type="submit">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&#169; 2023 Austin Okebata. All rights reserved </p>
+    </div>
+  </section>
+
+
+
+
+
+
+  <script>
+    let tablinks = document.getElementsByClassName('tab-links');
+
+    let tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+<!-- ========= SIDE BAR JAVASCRIPT ======== -->
+
+  <script>
+    let sideMenu = document.querySelector("#sideMenu");
+
+    function openMenu(){
+      sideMenu.style.right = "0";
+    }
+
+    function closeMenu(){
+      sideMenu.style.right = "-200px";
+    }
+  </script>
+
+  <!-- ========= GOOGLE SHEET SCRIPT ====== -->
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxDzSXh8-uKrRuoWf2rU0nHvdKPJSxNKv9Cxrg3NHzQyHG129XsYJQxwSJ0iKUliHkE/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.querySelector("#msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },3000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
